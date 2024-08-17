@@ -1,8 +1,12 @@
 import React from "react";
+
+// Extracting new type for props
+type Color = "red" | "green" | "blue";
+
 // Make a seprate type to reduce repetition
 type ButtonProps = {
   text: string;
-  bgColor: "red" | "green"| "blue";
+  bgColor: Color;
   textColor: string;
 };
 const Button = (props: ButtonProps) => {

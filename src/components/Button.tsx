@@ -2,7 +2,7 @@ import React from "react";
 // Make a seprate type to reduce repetition
 type ButtonProps = {
   text: string;
-  bgColor: string;
+  bgColor: "red" | "green"| "blue";
   textColor: string;
 };
 const Button = (props: ButtonProps) => {

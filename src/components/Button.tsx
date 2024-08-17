@@ -7,7 +7,8 @@ type Color = "red" | "green" | "blue";
 type ButtonProps = {
   text: string;
   bgColor: Color;
-  textColor: string;
+  textColor?: string;
+  paddingArray: number[];
 };
 const Button = (props: ButtonProps) => {
   const { text, bgColor, textColor } = props;
